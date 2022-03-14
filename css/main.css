@@ -1,0 +1,90 @@
+/* ustoz keyframes larni ishlattim css  */
+header{
+    background-image: url("../iamges/bg.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+body{
+    background: #FBE9C8;
+}
+main{
+    transform: translateY(77px);
+    z-index: -1;
+}
+
+header{
+    z-index: 1;
+    overflow: hidden;
+}
+.pake-img{
+    position: absolute;
+    top: 0;
+}
+.pake-img:nth-child(even) {
+    margin-left: 350px;
+}
+.pake3 {
+    margin-left: 1000px;
+}
+.pake1{
+    animation: pake1 1.5s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes pake1 {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(50px);
+    }
+}
+.pake4{
+    animation: pake4 1.5s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes pake4 {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(50px);
+    }
+}
+
+.pake2{
+    animation: pake2 10s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes pake2 {
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(900deg);
+    }
+}
+.pake3{
+    animation: pake2 10s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+li{
+    transition: all 1s;
+}
+li:hover{
+    background: #E33C38;
+}
+li:hover h2{
+    color: #fff;
+    filter: drop-shadow(0 0 20px blueviolet) drop-shadow(0 0 40px #E33C38);
+}
+li:hover img {
+    transition: all 1s;
+    transform: scale(1.2) translateY(-15px);
+}
+li:hover p {
+    color: #fff;
+    filter: drop-shadow(0 0 20px blueviolet) drop-shadow(0 0 40px blueviolet);
+}
